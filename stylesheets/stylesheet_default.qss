@@ -1,0 +1,164 @@
+/*General settings*/
+QWidget{
+    background-color: white;
+    /*Global font color*/
+    color: black;
+}
+
+QWidget:disabled{
+    /*Global color of disabled items*/
+    color: gray;
+}
+
+/*settings dialog params*/
+QDialog{
+    background-color: white;
+    color: black;
+}
+
+QTabBar::tab {
+    background-color: white;
+    border: 1px solid #ada9a5;
+    border-bottom: 1px solid white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0px;
+    padding: 0px;
+    min-width: 85px;
+    min-height: 25px;
+}
+
+QTabBar::tab:!selected{
+    margin-top:10px;
+}
+
+QTabBar::tab:selected{
+    margin-top: 5px;
+}
+
+/*Menu params*/
+QMenu {
+    background: white; 
+    border: 1px solid #ada9a5;
+} 
+
+QMenu::item:selected {
+    background: #595ba8;
+}
+
+/*QMenu {background: white} QMenu::item:selected {background: rgba(104, 106, 176, 250)}*/
+
+
+WToolButton {
+    background-image: url(:/wui/lync/images/bg_transparent.png);
+    background-color:transparent;
+}
+
+WPushButton {
+    border-image: url(:/wui/lync/images/bg_btn_normal.png) 6 6 6 6;
+    color: white; 
+    border-radius:4px;
+}
+
+/*Combobox*/
+
+QComboBox {
+    background: white;
+    border: 1px solid #ada9a5;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox::drop-down {
+    border-left-width:1px;
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width:12px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::item:selected {
+    background: #595ba8;
+}
+
+/*clear History button*/
+QPushButton#pbClearLoginHistory{
+    font-weight: normal;
+    background-image: url(:/wui/lync/images/bg_transparent.png);
+    background-color: transparent;
+    color:blue
+}
+
+QPushButton#pbClearLoginHistory:hover {
+    background-image: url(:/wui/lync/images/bg_transparent.png);
+    background-color: transparent;
+    color:#2693ca;
+}
+
+QPushButton#pbClearLoginHistory:pressed {
+    background-image: url(:/wui/lync/images/bg_transparent.png);
+    background-color: transparent;
+    color:#660099;
+}
+
+/*settings window general*
+
+/*device settings*/
+/* QWidget style already set */
+/*
+QWidget#WDeviceSettingsWidget{
+    background-color: white;
+}
+*/
+
+QWidget#widget{
+    background: black;
+}
+
+QLabel#lbTestWarning{
+    color: red;
+}
+
+QTextBrowser#tbAffectWarning{
+    background-color: white
+}
+
+/*Connection settings*/
+/* QWidget style already set */
+/*
+QWidget#WConnectionSettingsWidget{
+    background-color: white;
+}
+*/
+
+QLabel#lbLastLoginServer{
+    color: gray;
+}
+
+QLabel#lbLastLoginServerValue{
+    color: gray;
+}
+
+
+QLineEdit#leNote{
+    background: #8e72f3;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-color: #8e72f3;
+    color: white;
+    font: normal 12px;
+    height: 23px;
+    border: 3px solid #8e72f3;
+}
+
+/*chat browser*/
+QFrame#frame{background: white}
+QLabel#lbTyping{border: none;font-style:italic; color:#5555ff; font-size:8pt; margin-left:5px;}
+QTextBrowser#tbrChatDisplay{border: none;}
